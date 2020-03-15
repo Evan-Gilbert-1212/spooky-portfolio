@@ -4,9 +4,315 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Heebo', sans-serif;
+  background-color: rgb(51, 51, 51);
+  color: rgb(216, 216, 216);
+}
+
+span {
+  color: rgb(255, 94, 94);
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0;
+  height: 3rem;
+  width: 8rem;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin: 0;
+}
+
+.page-nav {
+  visibility: hidden;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.page-nav > li {
+  color: rgb(29, 209, 246);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.top-button {
+  visibility: hidden;
+}
+
+.title-section {
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  width: 368px;
+  margin: auto;
+}
+
+.content-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+
+div {
+  height: 600px;
+  width: 100vw - 2rem;
+  margin: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: 0.4s ease;
+}
+
+.skull {
+  background-image: url('./images/skull.jpg');
+}
+
+.fall {
+  background-image: url('./images/fall.jpg');
+}
+
+.front-door {
+  background-image: url('./images/front-door.jpg');
+}
+
+.jack-o-lanterns {
+  background-image: url('./images/jack-o-lanterns.jpg');
+}
+
+.storm-astronaut {
+  background-image: url('./images/storm-astronaut.jpeg');
+}
+
+.pumpkins {
+  background-image: url('./images/pumpkins.jpeg');
+}
+
+.candles {
+  background-image: url('./images/candles.jpeg');
+}
+
+.pumpkin-spider {
+  background-image: url('./images/pumpkin-spider.jpeg');
+}
+
+.tagline {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 750px) {
+  .page-nav {
+    visibility: visible;
+  }
+  .top-button {
+    visibility: visible;
+  }
+  .title {
+    font-size: 4rem;
+    width: 700px;
+    font-weight: 600;
+  }
+  header {
+    margin-top: 3rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: minmax(4rem, 4rem);
+  }
+  h1 {
+    padding-left: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .page-nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .top-button {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 16.667% 16.667% 16.667% 16.667% 16.667% 16.667%;
+  }
+  div {
+    height: 300px;
+  }
+  .skull {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 0;
+  }
+  .fall {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 0;
+  }
+  .front-door {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 0;
+  }
+  .jack-o-lanterns {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 0;
+  }
+  .storm-astronaut {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 0;
+  }
+  .pumpkins {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 0;
+  }
+  .candles {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 0;
+  }
+  .pumpkin-spider {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-right: 0;
+  }
+
+  @media (min-width: 980px) {
+    header {
+      grid-template-columns: 25% 58% 17%;
+    }
+    h1 {
+      padding-left: 2rem;
+    }
+    .title {
+      width: 900px;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    div {
+      height: 400px;
+    }
+    .skull {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin-left: 0;
+    }
+    .fall {
+      grid-column-start: 4;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin-right: 0;
+    }
+    .front-door {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin-left: 0;
+    }
+    .jack-o-lanterns {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: 1rem;
+    }
+    .storm-astronaut {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin-left: 1rem;
+      margin-right: 0;
+    }
+    .pumpkins {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .candles {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      margin-left: 0;
+    }
+    .pumpkin-spider {
+      grid-column-start: 4;
+      grid-column-end: 7;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      margin-right: 0;
+    }
+  }
 }
